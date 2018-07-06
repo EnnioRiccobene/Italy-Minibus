@@ -1,0 +1,272 @@
+/* Mobile first - up to 768px wide */
+/*body   { background-color: green; }*/
+header {    
+	background-color: rgb(141, 198, 63);
+    color: white;
+    padding: 15px;
+}
+
+body{
+	font-family: "Times New Roman";
+}
+
+.a1:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.a1:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.a1:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.a1:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+	
+#h2nav {
+	display: none;
+}
+
+#noscript{
+    color: red;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {height: 1500px}
+    
+/* Set gray background color and 100% height */
+.sidenav {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.line {
+    color: #006699;
+    background-color: transparent;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.line:hover {
+	background-color: #a6a6a6;	
+}
+
+.mynav {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.mynav>li>a {
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    list-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    /*font-size: 14px;*/
+    text-align: left;
+    margin-left: -40px;
+}
+
+.a2:link {
+    color: #006699;
+    background-color: transparent;
+    text-decoration: none;
+}
+.a2:visited {
+    color: #006699;
+    background-color: transparent;
+    text-decoration: none;
+}
+.a2:hover {
+    color: #004466;
+    background-color: #a6a6a6;
+    text-decoration: none;
+    
+}
+.a2:active {
+    color: #004466;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.button {
+  padding: 1.2% 2%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(141,198,63);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+}
+
+.button:hover {
+    
+}
+
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.routeBox {
+    /*border-style: solid;*/
+    border-color: transparent;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px; 
+    border-width: thick;
+    background: linear-gradient(to bottom right, rgb(141,198,63) 0%, white 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#blueBus {
+    height:inherit;
+    width:inherit;
+}
+
+.pBox {
+    padding: inherit;
+    padding-top: 4px;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+    .row.content {height: auto;} 
+	
+	#logo, #blueBus{
+		display:none;		
+	}
+    
+    #h3nav {	
+		display:block;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: steelblue;
+	}
+	
+	#h2nav {	
+		display:none;
+	}
+
+}
+
+select {
+    color: white;
+    background-color: rgb(141, 198, 63);
+    border-color: transparent;
+    outline-color: transparent;    
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    
+}
+
+.error {
+    color: red;
+}
+
+#register .short{
+    font-weight:bold;
+    color:#FF0000;
+    font-size:larger;
+}
+#register .weak{
+    font-weight:bold;
+    color:orange;
+    font-size:larger;
+}
+#register .good{
+    font-weight:bold;
+    color:#2D98F3;
+    font-size:larger;
+}
+#register .strong{
+    font-weight:bold;
+    color: limegreen;
+    font-size:larger;
+}
+
+/* Tablet targetted size */
+@media screen and (min-width:768px) and (max-width:1024px) {
+  /*body   { background-color: orange }*/
+    #blueBus {
+        height:50%;
+        width:50%;
+    }
+    
+    #h3nav {	
+		display:block;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: steelblue;
+	}
+	
+	#h2nav {	
+		display:none;
+	}
+}
+
+/* Desktop size */
+@media screen and (min-width:1025px) {
+/*body   { background-color: blue }*/
+    
+ 	.a1 {
+		font-size:1.5vw;	
+	}
+	
+	.a2 {
+		font-size:1.5vw;	
+	}
+	
+	#h3nav {	
+		display:none;
+	}
+	
+	#h2nav {	
+		display:block;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: steelblue;
+	}
+    
+    h4{
+        font-size: 1.5vw;
+    }
+    
+    p {
+        font-size: 1.2vw;
+    }
+    
+    #pcap {
+        font-size: 1.5vw;
+    }
+    
+    .button {
+        font-size: 1.1vw;
+    }
+    
+}
