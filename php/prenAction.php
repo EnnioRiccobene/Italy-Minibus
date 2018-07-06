@@ -11,7 +11,7 @@ if($log_user != "Login" and $log_user != ""){
         $conn=connect();        
         
         if(isset($_POST['selPartenza'])){
-            $partenzaSel = $_POST['selPartenza'];
+            $partenzaSel = test_input($conn, $_POST['selPartenza']);
         }
         
         if(isset($_POST['textP'])){
@@ -19,7 +19,7 @@ if($log_user != "Login" and $log_user != ""){
         }
         
         if(isset($_POST['selDestinazione'])){
-            $destinazioneSel = $_POST['selDestinazione'];
+            $destinazioneSel = test_input($conn, $_POST['selDestinazione']);
         }
         
         if(isset($_POST['textD'])){
