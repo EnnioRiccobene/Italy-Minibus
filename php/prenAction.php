@@ -27,7 +27,7 @@ if($log_user != "Login" and $log_user != ""){
         }
         
         if(isset($_POST['selPasseggeri'])){
-            $Passeggeri = $_POST['selPasseggeri'];
+            $Passeggeri = test_input($conn, $_POST['selPasseggeri']);
         }
 
         if($partenzaSel != "0" and $partenzaSel != null) {
